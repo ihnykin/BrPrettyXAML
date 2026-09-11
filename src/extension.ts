@@ -1,4 +1,4 @@
-﻿import * as vscode from 'vscode';
+import * as vscode from 'vscode';
 import { exec } from 'child_process';
 import * as path from 'path';
 
