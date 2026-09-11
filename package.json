@@ -1,0 +1,49 @@
+﻿{
+  "name": "brprettyxaml",
+  "displayName": "BrPrettyXAML",
+  "description": "Форматирование и нормализация XAML файла",
+  "version": "1.0.0",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "brprettyxaml.run",
+        "title": "BrPrettyXAML"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "brprettyxaml.run",
+          "group": "navigation",
+          "when": "resourceExtname == .xaml || resourceExtname == .xml"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "brprettyxaml.run",
+          "group": "navigation",
+          "when": "resourceExtname == .xaml || resourceExtname == .xml"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.0.0"
+  }
+}
