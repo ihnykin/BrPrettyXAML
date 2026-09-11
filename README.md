@@ -1,4 +1,5 @@
-# VsPyPlugin
+# BrPrettyXAML
+
 A Visual Studio plugin for running Python scripts directly from the IDE.
 
 Удобное расширение для Visual Studio Code, которое позволяет запускать внешние Python-скрипты прямо из контекстного меню редактора.
