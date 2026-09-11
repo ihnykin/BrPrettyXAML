@@ -3,7 +3,7 @@
   "displayName": "BrPrettyXAML",
   "description": "Форматирование и нормализация XAML файла",
   "version": "1.0.0",
-  "publisher": "your-name",
+  "publisher": "local",
   "engines": {
     "vscode": "^1.90.0"
   },
